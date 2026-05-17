@@ -138,6 +138,12 @@ if [[ "${_git}" == "true" ]]; then
     "git"
   )
 fi
+# provides=(
+#   "${_py}=${_pymajver}"
+# )
+# conflicts=(
+#   "${_py}"
+# )
 _http="https://github.com"
 _ns="${_py}"
 _url="${_http}/${_ns}/${_Pkg}"
@@ -153,7 +159,7 @@ fi
 source=(
   "${_src}"
 )
-sha512sums=(
+sha256sums=(
   'SKIP'
 )
 
